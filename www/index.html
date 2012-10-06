@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="utf-8">
+    <title>My App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app/css/bootstrap.css" />
+    <link rel="stylesheet" href="app/css/bootstrap-navbar-fixed-only.css" />
+    <link rel="stylesheet" href="app/css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="app/css/app.css"/>
+</head>
+<body ng-controller="AppCtrl">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">Hello</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#help">Help</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1>Hello, {{name}}!</h1>
+
+        <form class="form-inline">
+            <legend></legend>
+            <label>Your name:</label>
+            <input type="text" placeholder="John Smith" ng-model="name">
+        </form>
+
+    </div> <!-- /container -->
+
+	<script src="app/lib/jquery-1.8.2.min.js"></script>
+	<script src="app/lib/angular/angular.min.js"></script>
+	<script src="app/lib/angular/angular-resource.min.js"></script>
+	<script src="app/lib/modernizr-2.0.6.min.js"></script>
+	<script src="app/lib/bootstrap.min.js"></script>
+	<script src="app/js/services.js"></script>
+	<script src="app/js/controllers.js"></script>
+	<script src="app/js/filters.js"></script>
+	<script src="app/js/directives.js"></script>
+
+</body>
+</html>
+
