@@ -52,6 +52,13 @@
 	<script src="app/js/filters.js"></script>
 	<script src="app/js/directives.js"></script>
 
+    <script  type="text/javascript">
+        $('a, button').bind('touchend', function(e) {
+            $(this).trigger('click');
+            e.preventDefault();
+        });
+    </script>
+
 </body>
 </html>
 
